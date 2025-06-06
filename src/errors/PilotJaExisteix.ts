@@ -1,0 +1,1 @@
+export class PilotJaExisteix extends Error { }

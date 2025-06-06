@@ -1,0 +1,1 @@
+export class InvalidIdPilot extends Error { }

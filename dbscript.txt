@@ -1,0 +1,35 @@
+CREATE USER USUARI WITH PASSWORD 'PASSWORD' CREATEDB;
+CREATE DATABASE BASE_DE_DADES;
+\c BASE_DE_DADES
+GRANT ALL PRIVILEGES ON DATABASE BASE_DE_DADES TO USUARI;
+GRANT ALL ON SCHEMA public TO USUARI;
+
+//TAULA PILOTS//
+
+INSERT INTO pilots (
+  "pilotId", "nomPilot", "edat", "nacionalitat", "escuderia", "foto", 
+  "posicio", "punts", "totalPunts", "podiums", 
+  "rendimentSec", "rendimentPluja", "rendimentMixt"
+) VALUES
+('P001', 'Max Verstappen', 27, 'Países Bajos', 'Red Bull Racing', 'verstappen.jpg', 0, 0, 0, 0, 9.8, 8.5, 9.4),
+('P002', 'Liam Lawson', 23, 'Nueva Zelanda', 'Red Bull Racing', 'lawson.jpg', 0, 0, 0, 0, 7.4, 6.8, 7.0),
+('P003', 'Charles Leclerc', 27, 'Mónaco', 'Ferrari', 'leclerc.jpg', 0, 0, 0, 0, 8.8, 7.5, 8.0),
+('P004', 'Lewis Hamilton', 39, 'Reino Unido', 'Ferrari', 'hamilton.jpg', 0, 0, 0, 0, 9.0, 8.8, 8.5),
+('P005', 'Lando Norris', 25, 'Reino Unido', 'McLaren', 'norris.jpg', 0, 0, 0, 0, 8.5, 7.2, 8.0),
+('P006', 'Oscar Piastri', 23, 'Australia', 'McLaren', 'piastri.jpg', 0, 0, 0, 0, 8.0, 7.0, 7.5),
+('P007', 'George Russell', 26, 'Reino Unido', 'Mercedes', 'russell.jpg', 0, 0, 0, 0, 8.3, 7.6, 7.8),
+('P008', 'Andrea Kimi Antonelli', 18, 'Italia', 'Mercedes', 'antonelli.jpg', 0, 0, 0, 0, 6.5, 6.0, 6.3),
+('P009', 'Fernando Alonso', 43, 'España', 'Aston Martin', 'alonso.jpg', 0, 0, 0, 0, 8.7, 8.0, 8.3),
+('P010', 'Lance Stroll', 26, 'Canadá', 'Aston Martin', 'stroll.jpg', 0, 0, 0, 0, 6.8, 6.0, 6.5),
+('P011', 'Pierre Gasly', 28, 'Francia', 'Alpine', 'gasly.jpg', 0, 0, 0, 0, 7.9, 7.0, 7.4),
+('P012', 'Jack Doohan', 21, 'Australia', 'Alpine', 'doohan.jpg', 0, 0, 0, 0, 6.5, 6.2, 6.3),
+('P013', 'Esteban Ocon', 28, 'Francia', 'Haas', 'ocon.jpg', 0, 0, 0, 0, 6.7, 6.0, 6.4),
+('P014', 'Oliver Bearman', 19, 'Reino Unido', 'Haas', 'bearman.jpg', 0, 0, 0, 0, 6.4, 6.1, 6.2),
+('P015', 'Alexander Albon', 28, 'Tailandia', 'Williams', 'albon.jpg', 0, 0, 0, 0, 7.2, 6.8, 6.9),
+('P016', 'Carlos Sainz', 30, 'España', 'Williams', 'sainz.jpg', 0, 0, 0, 0, 8.0, 7.5, 7.8),
+('P017', 'Nico Hülkenberg', 36, 'Alemania', 'Sauber', 'hulkenberg.jpg', 0, 0, 0, 0, 6.0, 5.8, 5.9),
+('P018', 'Gabriel Bortoleto', 20, 'Brasil', 'Sauber', 'bortoleto.jpg', 0, 0, 0, 0, 5.8, 5.5, 5.6),
+('P019', 'Yuki Tsunoda', 24, 'Japón', 'Racing Bulls', 'tsunoda.jpg', 0, 0, 0, 0, 6.6, 6.2, 6.4),
+('P020', 'Isack Hadjar', 20, 'Francia', 'Racing Bulls', 'hadjar.jpg', 0, 0, 0, 0, 5.9, 5.6, 5.7);
+
+

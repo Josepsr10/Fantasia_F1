@@ -1,0 +1,1 @@
+export class InvalidEmail extends Error { }

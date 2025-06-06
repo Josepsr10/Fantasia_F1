@@ -1,0 +1,1 @@
+export class InvalidCursaNom extends Error { }
