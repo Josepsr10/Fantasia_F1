@@ -1,4 +1,4 @@
-# API F1 Fantasía
+# API F1 Fantasia
 
 Esta es una API RESTful para un juego de fantasía basado en la Fórmula 1. Permite gestionar usuarios, equipos, pilotos, puntuaciones por carrera, y clasificaciones generales.
 
